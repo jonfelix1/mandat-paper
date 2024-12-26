@@ -54,7 +54,9 @@ samuel.mulatua41@ui.ac.id}
 
 \begin{abstract}
 In the banking industry, high-quality data is essential for operational efficiency, regulatory compliance, and strategic decision-making. Understanding the maturity level of Data Quality Management (DQM) is crucial for PT Bank XYZ to identify gaps and uncover opportunities for improvement. Poor data quality can lead to significant risks, including inaccurate reporting, flawed decision-making, financial losses, and regulatory penalties. This study evaluates the DQM maturity at PT Bank XYZ using David Loshin’s Data Quality Framework and the Data Management Body of Knowledge (DMBOK) guidelines.
+
 The research involves comprehensive interviews with key stakeholders to assess the bank's performance across eight DQM components, including governance, standards, and technology. The findings reveal an average maturity level of 2.04, classified as "Repeatable." While PT Bank XYZ demonstrates strength in data standard aspect, it struggles with deficiencies in data governance, quality protocols, and the implementation of advanced data technologies. These gaps hinder the bank’s ability to fully leverage its data assets for strategic growth and regulatory compliance.
+
 To address these challenges, the study provides actionable recommendations aimed at enhancing DQM practices. By adopting these strategies, PT Bank XYZ can improve its data quality framework, reduce risks, and achieve a more sustainable competitive advantage.
 \end{abstract}
 
@@ -81,8 +83,7 @@ PT Bank XYZ, a microfinance-focused bank headquartered in Kabupaten Bandung Bara
 
 In the context of these challenges, understanding the maturity level of DQM at PT Bank XYZ is critical to identifying gaps and uncovering opportunities for improvement. The bank operates in a complex data ecosystem that integrates Core Banking Systems (CBS), Customer Relationship Management (CRM) platforms, and Loan Origination Systems (LOS), among others, without mechanisms for aggregating or monitoring data quality. As the organization strives to improve digital services and ensure compliance with evolving regulatory standards, addressing the risks of poor data quality—such as reputational damage, reporting errors, financial losses, and strategic missteps—becomes essential.
 
-To address these challenges, this paper explores the maturity level of data quality management at PT Bank XYZ and outlines strategies to enhance its governance framework. The study emphasizes the need for a holistic approach to data integration, quality monitoring, and regulatory compliance to ensure sustainable growth and resilience in the face of increasing data demands. This study is structured around two primary research questions: First, it seeks to determine the current maturity level of data quality management (DQM) at PT Bank XYZ. Second, it aims to explore strategies for improving the bank’s DQM practices to address regulatory, operational, and strategic risks effectively.
-
+To address these challenges, this paper explores the maturity level of data quality management at PT Bank XYZ and outlines strategies to enhance its governance framework. The study emphasizes the need for a holistic approach to data integration, quality monitoring, and regulatory compliance to ensure sustainable growth and resilience in the face of increasing data demands. The objective of this study is to improve and evaluate the data quality management processes at PT Bank XYZ.
 
 \section{Related Works}
 
@@ -99,7 +100,6 @@ Data quality is essential for maintaining the usability, reliability, and trustw
     \item \textbf{Completeness}: This dimension assesses whether all required data is present, ensuring no critical information is missing \cite{mahanti2019data}.
     \item \textbf{Uniqueness}: Ensures there is no redundant or duplicate data within a dataset, improving the overall integrity \cite{sebastiancoleman2022meeting}.
     \item \textbf{Timeliness}: Evaluates whether the data is up-to-date and relevant at the time of use, crucial for dynamic and real-time decision-making \cite{mashoufi2023data}.
-    \item \textbf{Validity}: Verifies that the data adheres to predefined formats, business rules, and constraints \cite{mcgilvray2021executing}.
     \item \textbf{Accuracy}: Measures whether the data accurately represents real-world values or concepts, ensuring trustworthiness \cite{west2021towards}.
     \item \textbf{Consistency}: Examines whether data values are aligned across multiple datasets or systems, preventing contradictions \cite{antonio2024data}.
 \end{itemize}
@@ -181,40 +181,99 @@ Ismael, C et al \cite{ismael2003caldea} & Initial, Definition, Integration, Quan
 
 In this study, the author selected David Loshin's data quality maturity model. This model was chosen because its dimensions are comprehensive and more adaptable for application in various companies, including PT Bank XYZ, compared to other models.
 
-\section{Research Method}
+% \section{Research Method}
 
-This research stage as shown by figure \ref{fig:research-step} begins with problem identification by asking Director of Operations where the key issue is defined to guide the study. Next, a literature review is conducted to previous research on the topic. Following this, a research instrument is developed using Data Quality Framework by David Loshin \cite{loshin_dqi} as interview guides. After the data is collected, a data quality management maturity assessment is performed. Finally, based on the findings, a data quality improvement strategy is developed to enhance the quality and effectiveness of the data for future analysis based on the Data Quality Activities by DMBOK.
-\begin{figure}[H]
-\centerline{\includegraphics[width=0.4\textwidth]{figures/AlurPenelitian.png}}
+% This research stage as shown by figure \ref{fig:research-step} begins with problem identification by asking Director of Operations where the key issue is defined to guide the study. Next, a literature review is conducted to previous research on the topic. Following this, a research instrument is developed using Data Quality Framework by David Loshin \cite{loshin_dqi} as interview guides. After the data is collected, a data quality management maturity assessment is performed. Finally, based on the findings, a data quality improvement strategy is developed to enhance the quality and effectiveness of the data for future analysis based on the Data Quality Activities by DMBOK.
+% \begin{figure}[H]
+% \centerline{\includegraphics[width=0.4\textwidth]{figures/AlurPenelitian.png}}
+% \caption{Research Stages}
+% \label{fig:research-step}
+% \end{figure}
+
+% \subsection{Research Instruments}
+
+% In this study, the DQM maturity level characteristic matrix, derived from David Loshin’s Data Quality Framework (DQF) \cite{loshin_dqi} is used as the instrument. The matrix consists of a checklist containing 121 characteristics spread across 8 components defined in the DQF, as summarized in TABLE \ref{tab:questionnare-areas}. 
+% \begin{table}[H]
+% \caption{Table of Questionnaire Areas and Number of Questions}
+% \label{tab:questionnare-areas}
+% \centering
+% \begin{tabular}{|l|c|}
+% \hline
+% \textbf{Questionnaire Area} & \textbf{\#Question} \\
+% \hline
+% Data Quality Expectations & 18 \\
+% \hline
+% Data Quality Dimensions & 14 \\
+% \hline
+% Information Policies & 17 \\
+% \hline
+% Data Quality Protocols & 20 \\
+% \hline
+% Data Governance & 18 \\
+% \hline
+% Data Standards & 20 \\
+% \hline
+% Data Quality Technology & 12 \\
+% \hline
+% Performance Management & 14 \\
+% \hline
+% \textbf{Total} & \textbf{133} \\
+% \hline
+% \end{tabular}
+% \end{table}
+
+% \subsection{Data Collection}
+% Data was collected through interviews with two Subject Matter Experts (SME) in the organization, Head of Information Technology (IT) and Head of Operations. The interviews included a set of pre-planned questions using the research instrument to understand how the organization manages data quality. Interviews were conducted in person or online to accommodate participants’ schedules. The responses were recorded and transcribed for analysis.
+
+% \subsection{Data Analysis Techniques for Assessing Data Quality Maturity Levels}
+% This research used a mixed-methods approach for data analysis combining both qualitative and quantitative methods. Data was collected through interviews using preplanned questions. The interviews were transcribed for analysis and the transcripts were reviewed to evaluate the characteristics of each component in the DQF. \cite{loshin_dqi}.
+% Each characteristic was assessed and given a score 1 if it was true and 0 if it was not. The scores for each level within a component were averaged and summed to find the overall quality of the component. The overall data quality maturity level was then calculated by averaging the maturity levels of each component.
+
+% \subsection{Data Quality Improvement Strategy}
+% The characteristics that the organization has not fully met are identified. These characteristics are marked by a score of 0 in the evaluation. They highlight areas where the organization’s data quality management practices need improvement. These characteristics are mapped to the Data Quality Management (DQM) activities in the DMBOK \cite{DAMA_2013}. This mapping helps align the organization’s practices with established best practices. From this, the analysis provides specific recommendations and strategies to improve data quality management. 
+
+
+\section{Research Methodology}
+
+This study adopts a structured approach to evaluate and improve the data quality management (DQM) maturity level at PT Bank XYZ. The methodology integrates qualitative and quantitative methods, using David Loshin’s Data Quality Framework (DQF) and the Data Management Body of Knowledge (DMBOK) as guiding models. Figure \ref{fig:research-stages} provides an overview of the research stages, while the subsequent subsections outline the specific methods employed.
+
+\subsection{Research Stages}
+
+The research process consists of the following stages (illustrated in Fig. \ref{fig:research-stages}):
+\begin{itemize}
+    \item \textbf{Problem Identification:} Discussions with the Director of Operations were conducted to pinpoint key organizational challenges related to data quality management.
+    \item \textbf{Literature Review:} Relevant studies and frameworks on DQM and maturity assessment were reviewed to establish a theoretical foundation.
+    \item \textbf{Research Instrument Development:} A customized checklist was designed using Loshin’s DQM framework to assess maturity across eight components.
+    \item \textbf{Data Collection:} Qualitative data was gathered through stakeholder interviews, targeting subject matter experts (SMEs) within the organization.
+    \item \textbf{Data Analysis and Assessment:} The collected data was evaluated to calculate the organization’s DQM maturity level.
+    \item \textbf{Strategy Development:} Recommendations were proposed based on the gaps identified in the maturity assessment, aligning with DMBOK best practices.
+\end{itemize}
+
+\begin{figure}[h]
+\centerline{\includegraphics[width=0.45\textwidth]{figures/AlurPenelitian.png}}
 \caption{Research Stages}
-\label{fig:research-step}
+\label{fig:research-stages}
 \end{figure}
 
-\subsection{Research Instruments}
+\subsection{Research Instrument}
 
-In this study, the DQM maturity level characteristic matrix, derived from David Loshin’s Data Quality Framework (DQF) \cite{loshin_dqi} is used as the instrument. The matrix consists of a checklist containing 121 characteristics spread across 8 components defined in the DQF, as summarized in TABLE \ref{tab:questionnare-areas}. 
-\begin{table}[H]
-\caption{Table of Questionnaire Areas and Number of Questions}
-\label{tab:questionnare-areas}
+The primary tool for data collection was the DQM Maturity Level Characteristic Matrix, derived from David Loshin’s DQM Framework \cite{loshin_dqi}. The matrix includes a checklist of 133 characteristics across eight DQM components, as summarized in Table \ref{tab:questionnaire}. These components cover key areas such as governance, standards, and performance management, ensuring a comprehensive evaluation of the organization’s data quality practices.
+
+\begin{table}[h]
+\caption{Questionnaire Areas and Number of Questions}
+\label{tab:questionnaire}
 \centering
 \begin{tabular}{|l|c|}
 \hline
-\textbf{Questionnaire Area} & \textbf{\#Question} \\
+\textbf{Questionnaire Area} & \textbf{Number of Questions} \\
 \hline
 Data Quality Expectations & 18 \\
-\hline
 Data Quality Dimensions & 14 \\
-\hline
 Information Policies & 17 \\
-\hline
 Data Quality Protocols & 20 \\
-\hline
 Data Governance & 18 \\
-\hline
 Data Standards & 20 \\
-\hline
 Data Quality Technology & 12 \\
-\hline
 Performance Management & 14 \\
 \hline
 \textbf{Total} & \textbf{133} \\
@@ -223,14 +282,31 @@ Performance Management & 14 \\
 \end{table}
 
 \subsection{Data Collection}
-Data was collected through interviews with two Subject Matter Experts (SME) in the organization, Head of Information Technology (IT) and Head of Operations. The interviews included a set of pre-planned questions using the research instrument to understand how the organization manages data quality. Interviews were conducted in person or online to accommodate participants’ schedules. The responses were recorded and transcribed for analysis.
 
-\subsection{Data Analysis Techniques for Assessing Data Quality Maturity Levels}
-This research used a mixed-methods approach for data analysis combining both qualitative and quantitative methods. Data was collected through interviews using preplanned questions. The interviews were transcribed for analysis and the transcripts were reviewed to evaluate the characteristics of each component in the DQF. \cite{loshin_dqi}.
-Each characteristic was assessed and given a score 1 if it was true and 0 if it was not. The scores for each level within a component were averaged and summed to find the overall quality of the component. The overall data quality maturity level was then calculated by averaging the maturity levels of each component.
+Data collection focused on qualitative insights gathered through structured interviews with two Subject Matter Experts (SMEs): the Head of Information Technology (IT) and the Head of Operations. The interviews were guided by pre-designed questions derived from the DQM checklist to explore organizational practices in data management. Interviews were conducted both in-person and virtually, ensuring flexibility in scheduling. All responses were recorded, transcribed, and organized for subsequent analysis.
 
-\subsection{Data Quality Improvement Strategy}
-The characteristics that the organization has not fully met are identified. These characteristics are marked by a score of 0 in the evaluation. They highlight areas where the organization’s data quality management practices need improvement. These characteristics are mapped to the Data Quality Management (DQM) activities in the DMBOK \cite{DAMA_2013}. This mapping helps align the organization’s practices with established best practices. From this, the analysis provides specific recommendations and strategies to improve data quality management. 
+Although interviews were the primary method, incorporating surveys or benchmarking against similar organizations could have added more comparative insights. Future studies should consider these additional methods to enhance robustness.
+
+\subsection{Data Analysis}
+
+A structured scoring rubric was used to evaluate the collected data.
+
+\begin{itemize}
+    \item \textbf{Scoring Mechanism:} Each characteristic in the DQM framework was evaluated and assigned a score:
+    \begin{itemize}
+        \item \textbf{1:} If the characteristic was fully met.
+        \item \textbf{0:} If the characteristic was not met.
+    \end{itemize}
+    \item \textbf{Component-Level Averages:} Scores within each DQM component were averaged to compute a maturity level for that component.
+    \item \textbf{Overall Maturity Level:} An overall maturity score was calculated by averaging the maturity levels across all components.
+\end{itemize}
+
+
+\subsection{Development of Improvement Strategy}
+
+The analysis identified specific characteristics that were not met (scored 0), highlighting gaps in the organization’s DQM practices. These gaps were mapped to actionable strategies based on \cite{loshin_dqi} data quality management maturity model. For each gap, tailored recommendations were proposed to improve data governance, technology, and overall maturity.
+
+To ensure the feasibility and sustainability of improvements, the strategy targets achieving one maturity level above the organization’s current level \cite{loshin_dqi}. While organizations may aspire to reach the highest levels of maturity, attempting to make such a significant leap can overwhelm resources and disrupt ongoing processes. A gradual approach, focusing on advancing one level at a time, is more practical and aligns with the organization’s operational capacity. This incremental improvement allows PT Bank XYZ to consolidate its gains at each stage, ensuring that new processes, policies, and technologies are effectively integrated before pursuing further advancements.
 
 \section{Result and Discussions}
 \subsection{Assessment Result}
@@ -278,15 +354,84 @@ Based on the interviews, the current condition of each data quality component in
 \end{itemize}
 
 
-A good practice in data quality management is to set the target maturity level one level above the current state. Although organizations might want to reach the highest level of maturity, the challenges they face and the advisory role of data quality managers often make this difficult. Instead, it is better to reach for a level that meets the organization's goals while still being achievable within the team’s capabilities \cite{loshin_dqi}. Figure \ref{fig:maturity-level-spider-graph} shows the assessment result of PT Bank XYZ
+A good practice in data quality management is to set the target maturity level one level above the current state as shown in Table \ref{tab:target-maturity-level}. Although organizations might want to reach the highest level of maturity, the challenges they face and the advisory role of data quality managers often make this difficult. Instead, it is better to reach for a level that meets the organization's goals while still being achievable within the team’s capabilities \cite{loshin_dqi}. Figure \ref{fig:maturity-level-spider-graph} shows the assessment result of PT Bank XYZ
 
-\begin{figure}[h]
+\begin{table}[H]
+\caption{Target Maturity Level}
+\label{tab:target-maturity-level}
+\centering
+\begin{tabular}{|p{0.3cm}|p{3cm}|p{1cm}|p{2cm}|}
+\hline
+\textbf{No} & \textbf{Questionnaire Area} & \textbf{Target Maturity Level}&\textbf{Level Description} \\
+\hline
+1 & Data Quality Expectations & 3 & Defined\\
+\hline
+2 & Data Quality Dimensions & 3 & Defined\\
+\hline
+3 & Information Policies & 2 & Repeatable\\
+\hline
+4 & Data Quality Protocols & 3 & Defined \\
+\hline
+5 & Data Governance & 2 & Repeatable \\
+\hline
+6 & Data Standards & 4 & Managed \\
+\hline
+7 & Data Quality Technology & 2 & Repeatable\\
+\hline
+8 & Performance Management & 3 & Defined\\
+\hline
+\end{tabular}
+\end{table}
+
+By targeting a level just above the current one, organizations can make gradual improvements without overwhelming the staff. This approach helps achieve data quality benefits step by step, with clear goals along the way. In the end, this method leads to more manageable and effective improvements in data quality \cite{loshin_dqi}.
+
+% \begin{figure}[H]
+%     \centering
+%     \begin{tikzpicture}[scale=0.3]
+%         % Define the origin of the spider graph
+%         \coordinate (origin) at (0, 0);
+
+%         % Define the maturity levels and corresponding labels
+%         \foreach[count=\i] \radius/\label in {
+%             2.08/Data Quality \\ Expectations,
+%             2.00/Data Quality \\ Dimensions,
+%             1.90/Information \\ Policies,
+%             2.33/Data Quality \\ Protocols,
+%             1.33/Data \\ Governance,
+%             3.00/Data \\ Standards,
+%             1.58/Data Quality \\ Technology,
+%             2.08/Performance \\ Management}{
+%             \coordinate (\i) at (\i * 360 / 8: \radius * 3); % Scale radius by 3 for better visibility
+%             \node[align=center] (label) at (\i * 360 / 8: 11) {\normalsize\label}; % Place labels
+%             \draw[gray, dotted] (origin) -- (label); % Connect labels to the origin
+%         }
+
+%         % Draw the filled polygon connecting all points
+%         \draw [fill=blue!20, opacity=.7] (1)
+%                                     \foreach \i in {2,...,8}{-- (\i)} -- cycle;
+
+%         % Add the grid lines for reference
+%         \foreach \r in {1, 2, 3} {
+%             \draw [gray, dotted] (0, 0) circle (\r * 3);
+%         }
+
+%         % Add concentric circle labels
+%         % \node at (0, 0) {\footnotesize\textbf{0}};
+%         \node at (112.5:3) {\footnotesize\textbf{1}};
+%         \node at (112.5:6) {\footnotesize\textbf{2}};
+%         \node at (112.5:9) {\footnotesize\textbf{3}};
+%     \end{tikzpicture}
+%     \caption{Maturity Level Spider Graph}
+%     \label{fig:maturity-level-spider-graph}
+% \end{figure}
+
+\begin{figure}[H]
     \centering
-    \begin{tikzpicture}[scale=0.3]
+    \begin{tikzpicture}[scale=0.2]
         % Define the origin of the spider graph
         \coordinate (origin) at (0, 0);
 
-        % Define the maturity levels and corresponding labels
+        % Define the actual maturity levels and corresponding labels
         \foreach[count=\i] \radius/\label in {
             2.08/Data Quality \\ Expectations,
             2.00/Data Quality \\ Dimensions,
@@ -296,46 +441,69 @@ A good practice in data quality management is to set the target maturity level o
             3.00/Data \\ Standards,
             1.58/Data Quality \\ Technology,
             2.08/Performance \\ Management}{
-            \coordinate (\i) at (\i * 360 / 8: \radius * 3); % Scale radius by 3 for better visibility
-            \node[align=center] (label) at (\i * 360 / 8: 11) {\normalsize\label}; % Place labels
+            \coordinate (actual-\i) at (\i * 360 / 8: \radius * 3); % Scale radius by 3 for better visibility
+            \node[align=center] (label) at (\i * 360 / 8: 15) {\normalsize\label}; % Place labels at level 5
             \draw[gray, dotted] (origin) -- (label); % Connect labels to the origin
         }
 
-        % Draw the filled polygon connecting all points
-        \draw [fill=blue!20, opacity=.7] (1)
-                                    \foreach \i in {2,...,8}{-- (\i)} -- cycle;
+        % Define the target maturity levels
+        \foreach[count=\i] \radius in {
+            3, % Data Quality Expectations
+            3, % Data Quality Dimensions
+            2, % Information Policies
+            3, % Data Quality Protocols
+            2, % Data Governance
+            4, % Data Standards
+            2, % Data Quality Technology
+            3  % Performance Management
+        }{
+            \coordinate (target-\i) at (\i * 360 / 8: \radius * 3); % Scale radius by 3 for better visibility
+        }
+
+        % Draw the actual maturity level polygon
+        \draw [fill=blue!20, opacity=.7] (actual-1)
+                                    \foreach \i in {2,...,8}{-- (actual-\i)} -- cycle;
+
+        % Draw the target maturity level polygon
+        \draw [red, thick, dashed] (target-1)
+                                    \foreach \i in {2,...,8}{-- (target-\i)} -- cycle;
 
         % Add the grid lines for reference
-        \foreach \r in {1, 2, 3} {
+        \foreach \r in {1, 2, 3, 4, 5} {
             \draw [gray, dotted] (0, 0) circle (\r * 3);
         }
 
         % Add concentric circle labels
-        % \node at (0, 0) {\footnotesize\textbf{0}};
         \node at (112.5:3) {\footnotesize\textbf{1}};
         \node at (112.5:6) {\footnotesize\textbf{2}};
         \node at (112.5:9) {\footnotesize\textbf{3}};
+        \node at (112.5:12) {\footnotesize\textbf{4}};
+        \node at (112.5:15) {\footnotesize\textbf{5}};
+
+        % Add legend at the bottom
+        \node[fill=blue!20, draw=black, align=center] at (0, -20) {\scriptsize Actual Maturity Levels};
+        \node[red, thick, dashed, draw=black, align=center] at (0, -23) {\scriptsize Target Maturity Levels};
     \end{tikzpicture}
-    \caption{Maturity Level Spider Graph}
+    \caption{Maturity Level Spider Graph with Target Levels}
     \label{fig:maturity-level-spider-graph}
 \end{figure}
 
-By targeting a level just above the current one, organizations can make gradual improvements without overwhelming the staff. This approach helps achieve data quality benefits step by step, with clear goals along the way. In the end, this method leads to more manageable and effective improvements in data quality \cite{loshin_dqi}.
 
 \subsection{Recommendations}
-Gaps between the company current data quality and the target expectations through assessments or interviews is identified. These gaps show characteristics that are not yet implemented. Based on these gaps, recommendations are made to improve DQM using DQM activities from the DMBOK to reach one level above the current state. The complete gap analysis to gap analysis can be seen in Table \ref{tab:mapping}.
-The activities to improve Data Quality Management (DQM) based on the mapping to the Data Management Body of Knowledge (DMBOK) are listed below:
-\begin{enumerate}
-    \item Manage Data Quality Rules (DQM Activity 7.1) \\ Managing data quality rules means analyzing data to create rules, adding rules to system processes, and documenting them clearly. The rules should support business goals, be checked through data analysis, and confirmed by experts. They should also be available to all data users for better understanding and feedback. Below is a list of characteristics the company has not yet implemented, based on component maturity description of data quality management by David Loshin \cite{loshin_dqi}.
-        \begin{itemize}
-            \item "No data quality expectations have been documented"
-            \item "Expectations associated with dimensions of data quality associated with data values, formats, and semantics can be articulated using data quality rules
-            \item "Policies are informal"
-            \item 
-        \end{itemize}
-\end{enumerate}
+% Gaps between the company current data quality and the target expectations through assessments or interviews is identified. These gaps show characteristics that are not yet implemented. Based on these gaps, recommendations are made to improve DQM using DQM activities from the DMBOK to reach one level above the current state. The complete gap analysis to gap analysis can be seen in Table \ref{tab:mapping}.
+% The activities to improve Data Quality Management (DQM) based on the mapping to the Data Management Body of Knowledge (DMBOK) are listed below:
+% \begin{enumerate}
+%     \item Manage Data Quality Rules (DQM Activity 7.1) \\ Managing data quality rules means analyzing data to create rules, adding rules to system processes, and documenting them clearly. The rules should support business goals, be checked through data analysis, and confirmed by experts. They should also be available to all data users for better understanding and feedback. Below is a list of characteristics the company has not yet implemented, based on component maturity description of data quality management by David Loshin \cite{loshin_dqi}.
+%         \begin{itemize}
+%             \item "No data quality expectations have been documented"
+%             \item "Expectations associated with dimensions of data quality associated with data values, formats, and semantics can be articulated using data quality rules
+%             \item "Policies are informal"
+%         \end{itemize}
+% \end{enumerate}
 
-\begin{table*}[h]
+The assessment results highlighted several gaps between the company’s current data quality management (DQM) practices and the target expectations. These gaps represent characteristics that have not yet been implemented and hinder the organization’s progress toward higher maturity levels. Recommendations are presented below, prioritized to ensure a logical sequence of improvements that align with business goals and operational feasibility. The detailed mapping of gaps and recommended activities to the Data Management Body of Knowledge (DMBOK) is provided in Table \ref{tab:mapping}.
+
+\begin{table*}[hbt!]
 \caption{Mapping the gaps in DQM maturity levels to the activities outlined in DQM-DMBOK}
 \label{tab:mapping}
 \centering
@@ -397,6 +565,23 @@ Performance Management (target = 3) & "Data profiling used to identify data fail
 \hline
 \end{tabular}
 \end{table*}
+
+
+
+The first recommendation is to formalize data quality rules as this serves as the foundation for consistent data quality practices. The organization should develop and document formal data quality expectations and policies while defining rules associated with data values, formats, and semantics to ensure alignment with business objectives. These rules must be disseminated to all data users to promote awareness and encourage compliance. Achieving 100% documentation coverage of these rules within six months is suggested as a measurable target.
+
+The second recommendation focuses on strengthening the data governance framework, which is essential for assigning accountability and ensuring sustained improvements. Establishing a formal data stewardship role or team responsible for data quality management is critical, alongside creating guiding principles, a data quality charter, and governance policies. A cross-functional governance workgroup should also be formed to oversee data quality initiatives. The organization should aim to establish this governance framework and approve the related policies within three months.
+
+Implementing data quality technology is the third recommendation. Advanced tools for data quality assessment and validation are necessary to automate processes and ensure real-time monitoring. Deploying tools for data profiling, validation, and cleansing, as well as introducing rule-based validation techniques to detect errors in real-time, will significantly improve operational efficiency. Additionally, technology that matches and links data across systems should be adopted. A 50% reduction in data errors through automated validation tools within 12 months is a key goal for this initiative.
+
+Lastly, improving performance management is essential to establish mechanisms for measuring, monitoring, and reporting data quality effectively. Key metrics such as data error rates, SLA adherence, and improvement trends should be defined and integrated into a data quality scorecard for regular internal and external reporting. These metrics should also be incorporated into the organization’s performance review process. Implementing these scorecards within six months and reporting monthly trends will help track progress and ensure accountability.
+
+\subsubsection{Measurable Goals and Roadmap}
+
+In the short term, the organization should focus on formalizing data quality rules and disseminating them across the organization. Additionally, establishing a dedicated data governance team and approving guiding policies are critical initial steps. These efforts will lay the groundwork for subsequent improvements.
+
+In the long term, deploying data quality tools and automating validation processes are key priorities. These efforts should be complemented by integrating data quality metrics into performance reviews and achieving targeted reductions in error rates. This phased approach ensures manageable progress and aligns with the organization’s capacity for change.
+
 
 
 \section{Conclusions and Future Works}
